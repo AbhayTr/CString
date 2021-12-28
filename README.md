@@ -4,17 +4,17 @@ C module for working with dynamic strings.
 
 ## Working of CString
 
-CString works by initialising a "String" Data Structure defined in cstring module. "String" is basically a struct which contains three fields.
+CString works by initialising a **"String" Data Structure** defined in **cstring module**. **"String"** is basically a **struct** which contains **three fields**.
 
-The first field is "str" which is of 'char *' type and stores the actual character data. "str" is stored in the heap memory and is allocated and controlled using malloc(), realloc() and free(), just like other data present in the heap memory.
+The first field is **"str"** which is of **'char *' type** and stores the **actual character data**. **"str" is stored in the heap memory** and is allocated and controlled using **malloc(), realloc() and free()**, just like other data present in the **heap memory**.
 
-The second field is "ulen" which is of 'int' type and stores the number of characters filled in the allocated heap memory.
+The second field is **"ulen"** which is of **'int' type** and stores the **number of characters filled in the allocated heap memory**.
 
-The third field is "alen" which is of 'int' type and stores the number of characters allocated to 'char *' pointer "str" in the heap memory.
+The third field is **"alen"** which is of **'int' type** and stores the **number of characters allocated to 'char *' pointer "str" in the heap memory**.
 
-While adding a character/"String", the module checks if "ulen" is less than "alen". If it is not, then the module calls realloc() and adds the required memory along with a standard buffer memory of 512 bytes to the "str" pointer.
+While adding a **character/"String"**, the module **checks if "ulen" is less than "alen"**. If it is not, then the module **calls realloc() and adds the required memory along with a standard buffer memory of 512 bytes** to the **"str" pointer**.
 
-This allows the module user to freely add as many characters as the user likes making it a dynamic string.
+This allows the module user to **freely add as many characters as the user likes** making it a **dynamic string**.
 
 **Please do note that even though this module protects from attacks like Buffer Overflow, Stack Overflow, etc., it is still the responsibility of the module user to manage heap memory as the module will keep calling realloc() and adding memory to the "str" pointer until Memory Overflow happens, in which case the "str" pointer will be removed.**
 
