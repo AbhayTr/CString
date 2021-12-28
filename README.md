@@ -40,6 +40,8 @@ void main()
 }
 ```
 
+More details about the module will be updated soon. So stay tuned...
+
 <!--
 ### Parameters
 
