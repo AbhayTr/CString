@@ -18,6 +18,8 @@ While adding a **character/"String"**, the module **checks if "ulen" is less tha
 
 This allows the module user to **freely add as many characters as the user likes** making it a **dynamic string**.
 
+**CString module** does provide **basic functions** like **substring(), index(), etc.** even for **char pointer data type directly**. More details are given in **"Functions"** section.
+
 **Please do note that even though this module protects from attacks like Buffer Overflow, Stack Overflow, etc., it is still the responsibility of the module user to manage heap memory as the module will keep calling realloc() and adding memory to the "str" pointer until Memory Overflow happens, in which case the "str" pointer will be removed.**
 
 ## Installation
