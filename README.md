@@ -12,7 +12,7 @@ The second field is **"ulen"** which is of **'int' type** and stores the **numbe
 
 The third field is **"alen"** which is of **'int' type** and stores the **number of characters allocated to char pointer "str" in the heap memory**.
 
-**'ulen'** and **'alen'** field is maintained by the **CString Module** automatically as and when required.
+**'ulen'** and **'alen'** fields are maintained by the **CString Module** automatically as and when required.
 
 While adding a **character/"String"**, the module **checks if "ulen" is less than "alen"**. If it is not, then the module **calls realloc() and adds the required memory along with a standard buffer memory of 512 bytes** to the **"str" pointer**.
 
