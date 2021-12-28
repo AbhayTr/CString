@@ -4,7 +4,7 @@ C module for working with dynamic strings.
 
 ## Working of CString
 
-**CString** works by initialising a **"String" Data Structure** defined in **CString module**. **"String"** is basically a **struct** which contains **three fields**.
+**CString** works by initialising a **"String" Data Structure** which is defined in **CString module**. **"String"** is basically a **struct** which contains **three fields**.
 
 The first field is **"str"** which is of **char pointer type** and stores the **actual character data**. **"str" is stored in the heap memory** and is allocated and controlled using **malloc(), realloc() and free()**, just like other data present in the **heap memory**.
 
