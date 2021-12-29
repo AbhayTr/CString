@@ -121,7 +121,7 @@ Returns position of **first occurence** of **String toBeFound** if it is found, 
 ### indxStr(String *string, char *toBeFound)
 
 ```C
-int pos = indx(&string, toBeFound);
+int pos = indxStr(&string, toBeFound);
 ```
 
 Returns position of **first occurence** of **char pointer toBeFound** if it is found, else returns **-1**.
@@ -134,7 +134,7 @@ Returns position of **first occurence** of **char pointer toBeFound** if it is f
 ### sindx(char *charString, char *toBeFound)
 
 ```C
-int pos = indx(charString, toBeFound);
+int pos = sindx(charString, toBeFound);
 ```
 
 Returns position of **first occurence** of **char pointer toBeFound** if it is found, else returns **-1**.
@@ -160,7 +160,7 @@ Returns **1** if **String string** contains **String toBeFound** else **0**.
 ### containsStr(String *string, char *toBeFound)
 
 ```C
-int containsStatus = contains(&string, toBeFound);
+int containsStatus = containsStr(&string, toBeFound);
 ```
 
 Returns **1** if **String string** contains **char pointer toBeFound** else **0**.
@@ -168,6 +168,19 @@ Returns **1** if **String string** contains **char pointer toBeFound** else **0*
 **Parameters**
 
 - **String:** **String** in which **char pointer toBeFound** will be searched.
+- **char pointer:** **char pointer** which has to be searched.
+
+### scontains(char *charString, char *toBeFound)
+
+```C
+int containsStatus = scontains(charString, toBeFound);
+```
+
+Returns **1** if **char pointer charString** contains **char pointer toBeFound** else **0**.
+
+**Parameters**
+
+- **char pointer:** **char pointer** in which **char pointer toBeFound** will be searched.
 - **char pointer:** **char pointer** which has to be searched.
 
 More details about the module will be updated soon. So stay tuned for more info...
