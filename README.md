@@ -54,10 +54,10 @@ String string = newString(SIZE);
 
 Creates **char pointer** and allocates **SIZE Bytes** using **malloc()** and assigns **0th index as "\0"** (Because in C, String is always terminated by "\0"). If **SIZE is 0**, then **STANDARD SIZE i.e. 512 Bytes** are allocated. Then, creates new **String struct** defined in the module, sets **ulen** and **alen** as **0** (because at the time of creation, the allocated memory is empty apart from the "\0" character which is a null character and hence is not counted in the length of the String) and returns the new **String struct**.
 
-### val(String string)
+### val(String *string)
 
 ```C
-char *actualCharValue = val(string);
+char *actualCharValue = val(&string);
 ```
 
 Returns **char pointer** of **actual char value** i.e. **"str" field**.
@@ -66,10 +66,10 @@ Returns **char pointer** of **actual char value** i.e. **"str" field**.
 
 - **String:** **String** of which the **"str"** field is required.
 
-### addChar(String string, char c)
+### addChar(String *string, char c)
 
 ```C
-int addCharStatus = addChar(string, c);
+int addCharStatus = addChar(&string, c);
 ```
 
 Concatenates **char c** to **String string**, updating the allocated memory if required and updating **ulen** and **alen** accordingly. Returns **0** if **concatenation operation was successful** or **-1** if the **operation failed** due to **Memory Overflow**.
@@ -79,17 +79,30 @@ Concatenates **char c** to **String string**, updating the allocated memory if r
 - **String:** **String** on which the **char** has to be concatenated.
 - **char:** **char** which has to be concatenated.
 
-### add(String string, String toBeConcatenated)
+### add(String *string, String *toBeConcatenated)
 
 ```C
-int addStatus = add(string, toBeConcatenated);
+int addStatus = add(&string, &toBeConcatenated);
 ```
 
 Concatenates **String toBeConcatenated** to **String string**, updating the allocated memory if required and updating **ulen** and **alen** accordingly. Returns **0** if **concatenation operation was successful** or **-1** if the **operation failed** due to **Memory Overflow**.
 
 **Parameters**
 
-- **String:** **String** on which the **char** has to be concatenated.
+- **String:** **String** on which the **String** has to be concatenated.
 - **String:** **String** which has to be concatenated.
+
+### addStr(String *string, char *toBeConcatenated)
+
+```C
+int addStatus = addStr(&string, toBeConcatenated);
+```
+
+Concatenates **char pointer toBeConcatenated** to **String string**, updating the allocated memory if required and updating **ulen** and **alen** accordingly. Returns **0** if **concatenation operation was successful** or **-1** if the **operation failed** due to **Memory Overflow**.
+
+**Parameters**
+
+- **String:** **String** on which the **char pointer** has to be concatenated.
+- **char pointer:** **char pointer** which has to be concatenated.
 
 More details about the module will be updated soon. So stay tuned for more info...
