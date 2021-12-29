@@ -105,4 +105,17 @@ Concatenates **char pointer toBeConcatenated** to **String string**, updating th
 - **String:** **String** on which the **char pointer** has to be concatenated.
 - **char pointer:** **char pointer** which has to be concatenated.
 
+### indx(String *string, String *toBeFound)
+
+```C
+int pos = indx(&string, &toBeFound);
+```
+
+Returns position of **first occurence** of **String toBeFound** if it is found, else returns **-1**.
+
+**Parameters**
+
+- **String:** **String** in which **String toBeFound** will be searched.
+- **String:** **String** which has to be searched.
+
 More details about the module will be updated soon. So stay tuned for more info...
