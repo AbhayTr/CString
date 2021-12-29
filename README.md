@@ -8,7 +8,7 @@ C module for working with dynamic strings.
 
 The first field is **"str"** which is of **char pointer type** and stores the **actual character data**. **"str" is stored in the heap memory** and is allocated and controlled using **malloc(), realloc() and free()**, just like other data present in the **heap memory**.
 
-The second field is **"ulen"** which is of **'int' type** and stores the **number of characters filled in the allocated heap memory**.
+The second field is **"ulen"** which is of **'int' type** and stores the **number of characters filled in the allocated heap memory**. This is basically the **"length of the dynamic string"**.
 
 The third field is **"alen"** which is of **'int' type** and stores the **number of characters allocated to char pointer "str" in the heap memory**.
 
