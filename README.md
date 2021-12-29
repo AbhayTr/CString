@@ -64,6 +64,19 @@ Returns **char pointer** of **actual char value** i.e. **"str" field**.
 
 **Parameters**
 
-- **String:** **String struct** of which the **"str"** field is required.
+- **String:** **String** of which the **"str"** field is required.
+
+### addChar(String string, char c)
+
+```C
+int addCharStatus = addChar(string, c);
+```
+
+Concatenates **char c** to **String string**, updating the allocated memory if required and updating **ulen** and **alen** accordingly. Returns **0** if **concatenation operation was successful** or **-1** if the **operation failed** due to **Memory Overflow**.
+
+**Parameters**
+
+- **String:** **String** on which the **char** has to be concatenated.
+- **char:** **char** which has to be concatenated.
 
 More details about the module will be updated soon. So stay tuned for more info...
