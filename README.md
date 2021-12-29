@@ -265,7 +265,7 @@ Trims **String string** by replacing whole **char value** with **substring of ch
 
 **Parameters**
 
-- **Same as substring() function.
+- **Same as substring() function.**
 
 ### strim(char *charString, int startIndex, int endIndex)
 
@@ -277,6 +277,6 @@ Trims **char pointer charString** by replacing whole **char value** with **subst
 
 **Parameters**
 
-- **Same as ssubstring() function.
+- **Same as ssubstring() function.**
 
 More details about the module will be updated soon. So stay tuned for more info...
