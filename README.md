@@ -131,4 +131,17 @@ Returns position of **first occurence** of **char pointer toBeFound** if it is f
 - **String:** **String** in which **char pointer toBeFound** will be searched.
 - **char pointer:** **char pointer** which has to be searched.
 
+### sindx(char *charString, char *toBeFound)
+
+```C
+int pos = indx(charString, toBeFound);
+```
+
+Returns position of **first occurence** of **char pointer toBeFound** if it is found, else returns **-1**.
+
+**Parameters**
+
+- **char pointer:** **char pointer** in which **char pointer toBeFound** will be searched.
+- **char pointer:** **char pointer** which has to be searched.
+
 More details about the module will be updated soon. So stay tuned for more info...
