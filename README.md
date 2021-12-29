@@ -44,8 +44,6 @@ void main()
 }
 ```
 
-More details about the module will be updated soon. So stay tuned for more info...
-
 ## Functions
 
 ### newString(int SIZE)
@@ -56,23 +54,21 @@ String string = newString(SIZE);
 
 Creates **char pointer** and allocates **SIZE Bytes** using **malloc()** and assigns **0th index as "\0"** (Because in C, String is always terminated by "\0"). If **SIZE is 0**, then **STANDARD SIZE i.e. 512 Bytes** are allocated. Then, creates new **String struct** defined in the module, sets **ulen** and **alen** as **0** (because at the time of creation, the allocated memory is empty apart from the "\0" character which is a null character and hence is not counted in the length of the String) and returns the new **String struct**.
 
-<!--
+### val(String string)
 
-### encrypt(String message, String public_key)
-
-```java
-String message = "Multicrypt algorithm is highly secure!";
-String public_key = keys.get("public");
-String encrypted_message = e2e.encrypt(message, public_key);
+```C
+char *actuaCharValue = val(string);
 ```
 
-Encrypts the message using MULTICRYPT algorithm.
+Returns **char pointer** of **actual char value** i.e. **"str" field**.
 
 **Parameters**
 
-- **message (Required):** Message to encrypt.
-- **public_key (Required):** Public Key of the recipient of the message (for the asymmetric encryption part).
+- **String:** **String struct** of which the **"str"** field is required.
 
+More details about the module will be updated soon. So stay tuned for more info...
+
+<!--
 
 ### decrypt(String message, String private_key)
 
