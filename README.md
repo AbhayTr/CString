@@ -301,4 +301,16 @@ Returns **1** if **char pointer charString** is numeric else **0**.
 
 - **char pointer:** **char pointer** to be checked.
 
+### toInteger(String *string)
+
+```C
+int numericString = toInteger(string);
+```
+
+Returns **int version** of **String string**. The algorithm **ignores non-numeric characters**.
+
+**Parameters**
+
+- **String:** **String** to be converted.
+
 More details about the module will be updated soon. So stay tuned for more info...
