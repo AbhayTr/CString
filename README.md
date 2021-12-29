@@ -46,24 +46,17 @@ void main()
 
 More details about the module will be updated soon. So stay tuned for more info...
 
-<!--
-### Parameters
-
-- **public_key (Optional):** Public Key to be used if you want to use existing key (Default: "").
-- **private_key (Optional):** Private Key to be used if you want to use existing key (Default: "").
-- **save (Optional):** Should be true/false. Specifies whether the keys have to be stored in a file or not (Default: true).
-- **key_path (Optional):** Specifies the path and name of the file where the keys have to be stored, if save = true (Default: root of your java projct)**(NOTE: Default value won't work in Android Project)**.
-- **new (Optional):** Should be true/false. Specifies whether it should ignore any existing key pairs and generate new key pair or not (Default: false).
-
 ## Functions
 
-### keys()
+### newString(int SIZE)
 
-```java
-Map keys = e2e.keys();
+```C
+String string = newString(SIZE);
 ```
 
-Returns Private Key and Public Key in the form of Map of the format {"public": %YOUR_PUBLIC_KEY%, "private": %YOUR_PRIVATE_KEY%}.
+Creates **char pointer** and allocates **SIZE Bytes** using **malloc()** and assigns **0th index as "\0"** (Because in C, String is always terminated by "\0"). If **SIZE is 0**, then **STANDARD SIZE i.e. 512 Bytes** are allocated. Then, creates new **String struct** defined in the module, sets **ulen** and **alen** as **0** (because at the time of creation, the allocated memory is empty apart from the "\0" character which is a null character and hence is not counted in the length of the String) and returns the new **String struct**.
+
+<!--
 
 ### encrypt(String message, String public_key)
 
