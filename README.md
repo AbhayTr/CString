@@ -157,4 +157,17 @@ Returns **1** if **String string** contains **String toBeFound** else **0**.
 - **String:** **String** in which **String toBeFound** will be searched.
 - **String:** **String** which has to be searched.
 
+### containsStr(String *string, char *toBeFound)
+
+```C
+int containsStatus = contains(&string, toBeFound);
+```
+
+Returns **1** if **String string** contains **char pointer toBeFound** else **0**.
+
+**Parameters**
+
+- **String:** **String** in which **char pointer toBeFound** will be searched.
+- **char pointer:** **char pointer** which has to be searched.
+
 More details about the module will be updated soon. So stay tuned for more info...
