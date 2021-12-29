@@ -79,4 +79,17 @@ Concatenates **char c** to **String string**, updating the allocated memory if r
 - **String:** **String** on which the **char** has to be concatenated.
 - **char:** **char** which has to be concatenated.
 
+### add(String string, String toBeConcatenated)
+
+```C
+int addStatus = add(string, toBeConcatenated);
+```
+
+Concatenates **String toBeConcatenated** to **String string**, updating the allocated memory if required and updating **ulen** and **alen** accordingly. Returns **0** if **concatenation operation was successful** or **-1** if the **operation failed** due to **Memory Overflow**.
+
+**Parameters**
+
+- **String:** **String** on which the **char** has to be concatenated.
+- **String:** **String** which has to be concatenated.
+
 More details about the module will be updated soon. So stay tuned for more info...
