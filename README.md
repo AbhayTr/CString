@@ -36,7 +36,11 @@ Simply use this code (Modify according to your needs):
 
 void main()
 {
-    String str = newString(0); //newString() will be explained in detail in the functions section.
+    String string = newString(0); //newString() will be explained in detail in the functions section.
+    addStr(string, "Abhay Tripathi");
+    printf("Value of str: %s.\n", string.str);
+    printf("Allocated Memory to str: %d.\n", string.alen);
+    printf("Used Memory by str: %d.\n", string.ulen);
 }
 ```
 
