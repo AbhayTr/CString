@@ -144,4 +144,17 @@ Returns position of **first occurence** of **char pointer toBeFound** if it is f
 - **char pointer:** **char pointer** in which **char pointer toBeFound** will be searched.
 - **char pointer:** **char pointer** which has to be searched.
 
+### contains(String *string, String *toBeFound)
+
+```C
+int containsStatus = contains(&string, &toBeFound);
+```
+
+Returns **1** if **String string** contains **String toBeFound** else **0**.
+
+**Parameters**
+
+- **String:** **String** in which **String toBeFound** will be searched.
+- **String:** **String** which has to be searched.
+
 More details about the module will be updated soon. So stay tuned for more info...
