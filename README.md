@@ -52,21 +52,21 @@ For eg., if we execute:
 
 ```C
 String name = newString(5);      //newString() will be explained in detail in the Functions section.
-addStr(string, "Abhay");         //addStr() will be explained in detail in the Functions section.
+addStr(name, "Abhay");         //addStr() will be explained in detail in the Functions section.
 ```
 
 then **"ulen"** field value is equal to **5**. So, if we execute:
 
 ```C
-string.str[2] = 't';
-printf("%s", string.str);
+name.str[2] = 't';
+printf("%s", name.str);
 ```
 
 it will **print "Abtay" perfectly**. But if we execute:
 
 ```C
-string.str[6] = 'w';
-printf("%s", string.str);
+name.str[6] = 'w';
+printf("%s", name.str);
 ```
 
 then it will result in **Buffer Overflow and in turn Undefined Behaviour varying from device to device** as only **5 + 1 = 6 Bytes** were allocated to **"name.str" char pointer**.  
