@@ -333,9 +333,9 @@ clear(&string);
 
 Sets **"ulen"** field to **0**, hence **over-writing any existing data** on **subsequent add()/addChar()** calls.
 
-**<font color="red">Warning</p>**
+**Warning**
 
-
+Calling **clear() does not delete the existing data which was present in the allocated heap memory**. 
 
 **Parameters**
 
@@ -352,5 +352,3 @@ Frees **"str" field** i.e. **char pointer containing the actual character value 
 **Parameters**
 
 - **String:** **String** to be freed.
-
-More details about the module will be updated soon. So stay tuned for more info...
