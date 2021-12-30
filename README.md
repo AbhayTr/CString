@@ -325,13 +325,29 @@ Returns **int version** of **char pointer charString**. The algorithm **ignores 
 
 - **char pointer:** **char pointer** to be converted.
 
+### clear(String *string)
+
+```C
+clear(&string);
+```
+
+Sets **"ulen"** field to **0**, hence **over-writing any existing data** on **subsequent add()/addChar()** calls.
+
+**<font color="red">Warning</p>**
+
+
+
+**Parameters**
+
+- **String:** **String** to be freed.
+
 ### freestr(String *string)
 
 ```C
 freestr(&string);
 ```
 
-Frees **"str" field** i.e. **char pointer containing the actual character value of the String** using **free()**.
+Frees **"str" field** i.e. **char pointer containing the actual character value of the String** using **free()**, clearing the **allocated heap memory**.
 
 **Parameters**
 
