@@ -68,6 +68,8 @@ void main()
 - [isStrNumeric(char *)](#isstrnumericchar-charstring)
 - [toInteger(String)](#tointegerstring-string)
 - [strToInteger(char *)](#strtointegerchar-charstring)
+- [clear(String)](#clearstring-string)
+- [freestr(String)](#freestrstring-string)
 
 ## Functions
 
