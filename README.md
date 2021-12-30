@@ -44,9 +44,12 @@ void main()
 }
 ```
 
-## Functions
+## List of Functions
 
-[Go to Real Cool Heading section](#clearstring-string)
+- [newString(int SIZE)](#newstringint-size)
+- More Coming Soon...
+
+## Functions
 
 ### newString(int SIZE)
 
