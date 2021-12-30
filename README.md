@@ -54,6 +54,15 @@ void main()
 - [indx(String, String)](#indxstring-string-string-tobefound)
 - [indxStr(String, char *)](#indxstrstring-string-char-tobefound)
 - [sindx(char *, char *)](#sindxchar-charstring-char-tobefound)
+- [contains(String, String)](#containsstring-string-string-tobefound)
+- [containsStr(String, char *)](#containsstrstring-string-char-tobefound)
+- [scontains(char *, char *)](#scontainschar-charstring-char-tobefound)
+- [replace(String, String, String)](#replacestring-string-string-tobefound-string-tobereplaced)
+- [replaceStr(String, char *, char *)](#replacestrstring-string-char-tobefound-char-tobereplaced)
+- [substring(String, int, int)](#substringstring-string-int-startindex-int-endindex)
+- [strsubstring(char *, int, int)](#strsubstringchar-charstring-int-startindex-int-endindex)
+- [ssubstring(char *, int, int)](#ssubstringchar-charstring-int-startindex-int-endindex)
+- [trim(String, int, int)](#trimstring-string-int-startindex-int-endindex)
 
 ## Functions
 
