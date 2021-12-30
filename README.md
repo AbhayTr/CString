@@ -339,7 +339,7 @@ Calling **clear() does not delete the existing data which was present in the all
 
 **Parameters**
 
-- **String:** **String** to be freed.
+- **String:** **String** to be cleared.
 
 ### freestr(String *string)
 
