@@ -46,8 +46,14 @@ void main()
 
 ## List of Functions
 
-- [newString(int SIZE)](#newstringint-size)
-- More Coming Soon...
+- [newString(int)](#newstringint-size)
+- [val(String)](#valstring-string)
+- [addChar(String, char)](#addcharstring-string-char-c)
+- [add(String, String)](#addstring-string-string-tobeconcatenated)
+- [addStr(String, char *)](#addstrstring-string-char-tobeconcatenated)
+- [indx(String, String)](#indxstring-string-string-tobefound)
+- [indxStr(String, char *)](#indxstrstring-string-char-tobefound)
+- [sindx(char *, char *)](#sindxchar-charstring-char-tobefound)
 
 ## Functions
 
