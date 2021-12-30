@@ -63,6 +63,11 @@ void main()
 - [strsubstring(char *, int, int)](#strsubstringchar-charstring-int-startindex-int-endindex)
 - [ssubstring(char *, int, int)](#ssubstringchar-charstring-int-startindex-int-endindex)
 - [trim(String, int, int)](#trimstring-string-int-startindex-int-endindex)
+- [strim(char *, int, int)](#strimchar-charstring-int-startindex-int-endindex)
+- [isNumeric(String)](#isnumericstring-string)
+- [isStrNumeric(char *)](#isstrnumericchar-charstring)
+- [toInteger(String)](#tointegerstring-string)
+- [strToInteger(char *)](#strtointegerchar-charstring)
 
 ## Functions
 
