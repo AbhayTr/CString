@@ -46,6 +46,8 @@ void main()
 
 ## Functions
 
+[Go to Real Cool Heading section](#clear(String *string))
+
 ### newString(int SIZE)
 
 ```C
