@@ -313,4 +313,16 @@ Returns **int version** of **String string**. The algorithm **ignores non-numeri
 
 - **String:** **String** to be converted.
 
+### strToInteger(char *charString)
+
+```C
+int numericString = strToInteger(charString);
+```
+
+Returns **int version** of **char pointer charString**. The algorithm **ignores non-numeric characters**.
+
+**Parameters**
+
+- **char pointer:** **char pointer** to be converted.
+
 More details about the module will be updated soon. So stay tuned for more info...
