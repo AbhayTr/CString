@@ -36,13 +36,40 @@ Simply use this code (Modify according to your needs):
 
 void main()
 {
-    String string = newString(0);       //newString() will be explained in detail in the functions section.
-    addStr(string, "Abhay Tripathi");   //addStr() will be explained in detail in the functions section.
+    String string = newString(0);       //newString() will be explained in detail in the Functions section.
+    addStr(string, "Abhay Tripathi");   //addStr() will be explained in detail in the Functions section.
     printf("Value of str: %s.\n", string.str);
     printf("Allocated Memory to str: %d.\n", string.alen);
     printf("Used Memory by str: %d.\n", string.ulen);
 }
 ```
+
+## Functionality Disclaimer
+
+One can assign a **char** using **direct index assigning method** provided for **char pointers** in C. But, the **index should be below and not equal to "ulen" field value** for the **String struct to work correctly**. **Failing to do so may result in Buffer Overflow or Undefined Behaviour**.
+
+For eg., if we execute:
+
+```C
+String name = newString(5);      //newString() will be explained in detail in the Functions section.
+addStr(string, "Abhay");         //addStr() will be explained in detail in the Functions section.
+```
+
+then **"ulen"** field value is equal to **5**. So, if we execute:
+
+```C
+string.str[2] = 't';
+printf("%s", string.str);
+```
+
+it will **print "Abtay" perfectly**. But if we execute:
+
+```C
+string.str[6] = 'w';
+printf("%s", string.str);
+```
+
+then it will result in **Buffer Overflow and in turn Undefined Behaviour varying from device to device** as only **5 + 1 = 6 Bytes** were allocated to **"name.str" char pointer**.  
 
 ## List of Functions
 
@@ -379,3 +406,5 @@ Frees **"str" field** i.e. **char pointer containing the actual character value 
 **Parameters**
 
 - **String:** **String** to be freed.
+
+This module is very useful for projects where huge amount of dynamic data is involved and efficiency and speed of C programming is required!
