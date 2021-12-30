@@ -325,4 +325,16 @@ Returns **int version** of **char pointer charString**. The algorithm **ignores 
 
 - **char pointer:** **char pointer** to be converted.
 
+### freestr(String *string)
+
+```C
+freestr(&string);
+```
+
+Frees **"str" field** i.e. **char pointer containing the actual character value of the String** using **free()**.
+
+**Parameters**
+
+- **String:** **String** to be freed.
+
 More details about the module will be updated soon. So stay tuned for more info...
