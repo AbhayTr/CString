@@ -51,8 +51,8 @@ One can assign a **char** using **direct index assigning method** provided for *
 For eg., if we execute:
 
 ```C
-String name = newString(5);      //newString() will be explained in detail in the Functions section.
-addStr(name, "Abhay");         //addStr() will be explained in detail in the Functions section.
+String name = newString(5);     //newString() will be explained in detail in the Functions section.
+addStr(name, "Abhay");          //addStr() will be explained in detail in the Functions section.
 ```
 
 then **"ulen"** field value is equal to **5**. So, if we execute:
