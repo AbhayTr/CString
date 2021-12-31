@@ -73,32 +73,36 @@ then it will result in **Buffer Overflow and in turn Undefined Behaviour varying
 
 ## List of Functions
 
+The **functions** provided by the **CString Module** is listed below. **Click on the function to get detailed information about it**.
+
 - [newString(int)](#newstringint-size)
-- [val(String)](#valstring-string)
-- [addChar(String, char)](#addcharstring-string-char-c)
-- [add(String, String)](#addstring-string-string-tobeconcatenated)
-- [addStr(String, char *)](#addstrstring-string-char-tobeconcatenated)
-- [indx(String, String)](#indxstring-string-string-tobefound)
-- [indxStr(String, char *)](#indxstrstring-string-char-tobefound)
+- [val(String *)](#valstring-string)
+- [addChar(String *, char)](#addcharstring-string-char-c)
+- [add(String *, String *)](#addstring-string-string-tobeconcatenated)
+- [addStr(String *, char *)](#addstrstring-string-char-tobeconcatenated)
+- [indx(String *, String *)](#indxstring-string-string-tobefound)
+- [indxStr(String *, char *)](#indxstrstring-string-char-tobefound)
 - [sindx(char *, char *)](#sindxchar-charstring-char-tobefound) - **Direct char pointer function**
-- [contains(String, String)](#containsstring-string-string-tobefound)
-- [containsStr(String, char *)](#containsstrstring-string-char-tobefound)
+- [contains(String *, String *)](#containsstring-string-string-tobefound)
+- [containsStr(String *, char *)](#containsstrstring-string-char-tobefound)
 - [scontains(char *, char *)](#scontainschar-charstring-char-tobefound) - **Direct char pointer function**
-- [replace(String, String, String)](#replacestring-string-string-tobefound-string-tobereplaced)
-- [replaceStr(String, char *, char *)](#replacestrstring-string-char-tobefound-char-tobereplaced)
-- [substring(String, int, int)](#substringstring-string-int-startindex-int-endindex)
+- [replace(String *, String *, String *)](#replacestring-string-string-tobefound-string-tobereplaced)
+- [replaceStr(String *, char *, char *)](#replacestrstring-string-char-tobefound-char-tobereplaced)
+- [substring(String *, int, int)](#substringstring-string-int-startindex-int-endindex)
 - [strsubstring(char *, int, int)](#strsubstringchar-charstring-int-startindex-int-endindex)
 - [ssubstring(char *, int, int)](#ssubstringchar-charstring-int-startindex-int-endindex) - **Direct char pointer function**
-- [trim(String, int, int)](#trimstring-string-int-startindex-int-endindex)
+- [trim(String *, int, int)](#trimstring-string-int-startindex-int-endindex)
 - [strim(char *, int, int)](#strimchar-charstring-int-startindex-int-endindex) - **Direct char pointer function**
-- [isNumeric(String)](#isnumericstring-string)
+- [isNumeric(String *)](#isnumericstring-string)
 - [isStrNumeric(char *)](#isstrnumericchar-charstring) - **Direct char pointer function**
-- [toInteger(String)](#tointegerstring-string)
+- [toInteger(String *)](#tointegerstring-string)
 - [strToInteger(char *)](#strtointegerchar-charstring) - **Direct char pointer function**
-- [clear(String)](#clearstring-string)
-- [freestr(String)](#freestrstring-string)
+- [clear(String *)](#clearstring-string)
+- [freestr(String *)](#freestrstring-string)
 
 ## Functions
+
+The **detailed information** about the **functions listed in the above section** is provided below.
 
 ### newString(int SIZE)
 
