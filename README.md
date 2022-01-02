@@ -405,7 +405,7 @@ Calling **clear() does not delete the existing data which was present in the all
 freestr(&string);
 ```
 
-Frees **"str" field** i.e. **char pointer containing the actual character value of the String** using **free()**, clearing the **allocated heap memory**.
+Frees **"str" field** i.e. **char pointer containing the actual character value of the String** using **free()**, freeing the **allocated heap memory**.
 
 **Parameters**
 
